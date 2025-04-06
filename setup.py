@@ -13,7 +13,7 @@ def load_requirements():
 setup(
     name='tordl',
     packages=find_packages(),
-    py_modules=['tordl'],
+    py_modules=['tordl_script'],
     version='1.10',
     license='MIT',
     description='CLI Torrent Search and Download',
@@ -40,7 +40,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'tordl=tordl:main',
+            'tordl=tordl_script:main',
         ],
     },
 )
