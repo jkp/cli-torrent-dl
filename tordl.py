@@ -213,7 +213,7 @@ def parse_args():
     return parsed
 
 
-if __name__ == "__main__":
+def main():
     cfg.init_cfg()
 
     parsed_args = parse_args()
@@ -238,3 +238,6 @@ if __name__ == "__main__":
         func.run_curses_ui(term)
 
     exit(0)
+
+if __name__ == "__main__":
+    main()
