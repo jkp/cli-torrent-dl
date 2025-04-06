@@ -3,3 +3,6 @@ python = "3.11"
 
 [tasks.pipx]
 run = "pipx install --python=$(which python) --pip-args=\"--use-deprecated=legacy-resolver\" ."
+
+[env]
+_.python.venv = { path = ".venv", create = true }
