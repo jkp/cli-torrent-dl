@@ -12,6 +12,7 @@ def load_requirements():
 
 setup(
     name='tordl',
+    packages=find_packages(),
     py_modules=['tordl'],
     version='1.10',
     license='MIT',
