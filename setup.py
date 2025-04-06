@@ -12,10 +12,7 @@ def load_requirements():
 
 setup(
     name='tordl',
-    packages=find_packages(where='tordl'),
-    package_dir={
-        '': 'tordl'
-    },
+    py_modules=['tordl'],
     version='1.10',
     license='MIT',
     description='CLI Torrent Search and Download',
